@@ -1,2 +1,2 @@
 # DiscoverDelhi
-Project by AIESEC IIT Delhi
+Application by AIESEC IIT DELHI
