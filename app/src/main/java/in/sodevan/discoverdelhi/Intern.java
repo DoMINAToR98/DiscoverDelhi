@@ -3,12 +3,18 @@ package in.sodevan.discoverdelhi;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-//Activity for the navigation drawer
+
+import com.ogaclejapan.smarttablayout.SmartTabLayout;
+import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
+import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
+
+//Activity for the intern which consists of a navigation drawer and a view pager adapter
 public class Intern extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -16,6 +22,26 @@ public class Intern extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intern);
+
+
+        //Implementation of viewpager adapter
+
+        FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
+                getSupportFragmentManager(), FragmentPagerItems.with(this)
+                .add("Explore Delhi",ExploreDelhi.class)
+                .add("Places to Eat",PlacestoEat.class)
+                .add("Places to Shop",PlacestoShop.class)
+                .add("Upcoming Events",UpcomingEvents.class)
+                .create());
+
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(adapter);
+
+        SmartTabLayout viewPagerTab = (SmartTabLayout) findViewById(R.id.viewpagertab);
+        viewPagerTab.setViewPager(viewPager);
+
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -70,18 +96,17 @@ public class Intern extends AppCompatActivity
 
         if (id == R.id.About) {
 
-
         } else if (id == R.id.Emergencies) {
 
         } else if (id == R.id.Support) {
 
         } else if (id == R.id.Transport) {
-
-        } else if (id == R.id.Support) {
-
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
 }
