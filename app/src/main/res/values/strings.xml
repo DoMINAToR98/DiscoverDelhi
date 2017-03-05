@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">DiscoverDelhi</string>
     <string name="title_activity_intern">Intern</string>
-
+    <string name="about_midtxt">AIESEC in Delhi IIT, a Delhi based Local Committee is situated in the capital city of India whose rich heritage and culture leaves one mesmerized.
+     In Persian, delordili(Delhi) means heart. It means that Delhi belongs to the large-hearted/daring people. It is an amalgamation of rich heritage
+    and post modern culture and offers much more than you can ever imagine.</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="about_address">Office Address: A-226, Shivalik Colony, Malviya Nagar, near Gol Chakkar, New Delhi, Delhi-110017</string>
     <string name="action_settings">Settings</string>
 </resources>

@@ -25,7 +25,8 @@
         <activity android:name=".ExploreDelhi" />
         <activity android:name=".PlacestoEat" />
         <activity android:name=".PlacestoShop" />
-        <activity android:name=".UpcomingEvents"></activity>
+        <activity android:name=".UpcomingEvents" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package in.sodevan.discoverdelhi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -87,6 +88,9 @@ public class Intern extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.About) {
+            Intent about=new Intent(Intern.this,About.class);
+            startActivity(about);
+
 
         } else if (id == R.id.Emergencies) {
 
