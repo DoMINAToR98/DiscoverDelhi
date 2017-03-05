@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/head"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:fontFamily="sans-serif"
                 android:text="@string/about_midtxt"
                 android:id="@+id/about_midtext"
@@ -35,19 +35,23 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:text="RECENT AWARDS"
                 android:id="@+id/about_awd"
                 android:layout_below="@id/about_midtext"/>
             <Button
+                android:paddingTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/about_impact"
+                android:backgroundTint="#E3F2FD"
                 android:layout_below="@id/about_awd"
                 android:text="Our Impact"/>
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:id="@+id/about_add"
                 android:fontFamily="sans-serif"
                 android:layout_below="@id/about_impact"
@@ -57,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/about_add"
                 android:id="@+id/about_reachus"
+                android:backgroundTint="#E3F2FD"
                 android:text="Reach Us"
                 />
 

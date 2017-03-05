@@ -26,7 +26,9 @@
         <activity android:name=".PlacestoEat" />
         <activity android:name=".PlacestoShop" />
         <activity android:name=".UpcomingEvents" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".about_ourimapct" />
+        <activity android:name=".about_recentawards"></activity>
     </application>
 
 </manifest>
