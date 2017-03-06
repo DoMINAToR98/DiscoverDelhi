@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_about"
     android:layout_width="match_parent"
@@ -11,7 +12,8 @@
     tools:context="in.sodevan.discoverdelhi.About">
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -20,14 +22,14 @@
                 android:layout_height="wrap_content"
                 android:text="AIESEC in Delhi IIT"
                 android:fontFamily="serif"
-                android:textSize="20sp"
+                android:textSize="23sp"
                 android:id="@+id/head"
                 android:textColor="#222222"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/head"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:fontFamily="sans-serif"
                 android:text="@string/about_midtxt"
                 android:id="@+id/about_midtext"
@@ -51,24 +53,22 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:id="@+id/about_add"
                 android:fontFamily="sans-serif"
                 android:layout_below="@id/about_impact"
                 android:text="@string/about_address"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/about_add"
-                android:id="@+id/about_reachus"
-                android:backgroundTint="#E3F2FD"
-                android:text="Reach Us"
+
                 />
-
-
-
         </RelativeLayout>
-
-
     </ScrollView>
+    <com.scalified.fab.ActionButton
+        android:id="@+id/action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        />
 </RelativeLayout>
