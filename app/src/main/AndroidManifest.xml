@@ -28,7 +28,13 @@
         <activity android:name=".UpcomingEvents" />
         <activity android:name=".About" />
         <activity android:name=".about_ourimapct" />
-        <activity android:name=".about_recentawards"></activity>
+        <activity android:name=".about_recentawards" />
+        <activity android:name=".Emergency" />
+        <activity android:name=".ModesofTransport" />
+        <activity android:name=".Support" />
+        <activity android:name=".EmergencyContacts" />
+        <activity android:name=".Contacts" />
+        <activity android:name=".Emergency_contacts_second"></activity>
     </application>
 
 </manifest>

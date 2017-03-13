@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
+
+
 public class Intern extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -30,10 +32,10 @@ public class Intern extends AppCompatActivity
                 .add("Places to Shop",PlacestoShop.class)
                 .add("Upcoming Events",UpcomingEvents.class)
                 .create());
-
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(adapter);
 
+        //creating fabs menu items
         SmartTabLayout viewPagerTab = (SmartTabLayout) findViewById(R.id.viewpagertab);
         viewPagerTab.setViewPager(viewPager);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -93,10 +95,16 @@ public class Intern extends AppCompatActivity
 
 
         } else if (id == R.id.Emergencies) {
+            Intent emergency=new Intent(Intern.this,Emergency.class);
+            startActivity(emergency);
 
         } else if (id == R.id.Support) {
+            Intent support=new Intent(Intern.this,Support.class);
+            startActivity(support);
 
         } else if (id == R.id.Transport) {
+            Intent transport=new Intent(Intern.this,ModesofTransport.class);
+            startActivity(transport);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

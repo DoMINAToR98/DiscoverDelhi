@@ -13,4 +13,12 @@
 Cras vel molestie sem. Donec ac elit vel sem porttitor efficitur. Cras leo odio, convallis sed sollicitudin non, blandit vitae eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eleifend ut sem id vulputate. Quisque ullamcorper, enim id ultrices bibendum, sapien nunc eleifend mi, at tincidunt nibh urna vel nulla. Fusce consequat, orci at auctor placerat, velit neque semper felis, vitae euismod nulla orci eget felis.\n \n
 
 Nulla eget dui vehicula, auctor felis non, fringilla tortor. Donec eget venenatis purus. Nullam dolor lorem, facilisis eget hendrerit a, bibendum in sapien. Donec et lorem iaculis, efficitur nulla convallis, pulvinar nisl. Donec non sapien non purus facilisis rutrum lobortis eu justo. In hac habitasse platea dictumst. Phasellus vel sapien nibh. Pellentesque non ligula at enim ultricies tristique. Nullam dictum est in erat interdum congue. Integer eget diam efficitur, aliquet leo a, interdum nulla. Aliquam nec ultricies leo.</string>
+    <string-array name="emergency_places">
+        <item>New Delhi</item>
+        <item>West Delhi</item>
+        <item>East Delhi</item>
+        <item>Central Delhi</item>
+        <item>South Delhi</item>
+    </string-array>
+
 </resources>
