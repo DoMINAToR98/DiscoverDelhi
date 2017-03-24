@@ -20,5 +20,18 @@ Nulla eget dui vehicula, auctor felis non, fringilla tortor. Donec eget venenati
         <item>Central Delhi</item>
         <item>South Delhi</item>
     </string-array>
+    <string-array name="emergency_aiesec_contacts">
+        <item>Tushar Jain</item>
+        <item>Surbhi Mahajan</item>
+        <item>Akshay Nagpal</item>
 
+    </string-array>
+    <string-array name="modes_of_transport">
+        <item>Delhi Metro</item>
+        <item>Auto Rickshaw</item>
+        <item>Buses</item>
+        <item>Cycle Rickshaw</item>
+        <item>Cabs</item>
+    </string-array>
+    <string name="title_activity_modesof_transport_second">ModesofTransport_second</string>
 </resources>

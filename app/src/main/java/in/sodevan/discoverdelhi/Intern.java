@@ -33,6 +33,7 @@ public class Intern extends AppCompatActivity
                 .add("Upcoming Events",UpcomingEvents.class)
                 .create());
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setOffscreenPageLimit(3);
         viewPager.setAdapter(adapter);
 
         //creating fabs menu items

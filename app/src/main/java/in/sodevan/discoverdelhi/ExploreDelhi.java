@@ -3,43 +3,36 @@ package in.sodevan.discoverdelhi;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ExploreDelhi extends Fragment {
-    private List<Places> placesList=new ArrayList<>();
-    private RecyclerView recyclerView;
-    private PlacesAdapter mAdapter;
+  //  private List<Places> placesList=new ArrayList<>();
+   // private RecyclerView recyclerView;
+ //   private PlacesAdapter mAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v =inflater.inflate(R.layout.activity_explore_delhi,container,false);
 
         //Recycler View implementation
-        recyclerView =(RecyclerView)v.findViewById(R.id.recycler_view);
-        mAdapter = new PlacesAdapter(placesList);
-      RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this.getActivity());
-        recyclerView.setLayoutManager(mLayoutManager);
+  //      recyclerView =(RecyclerView)v.findViewById(R.id.recycler_view);
+  //      mAdapter = new PlacesAdapter(placesList);
+  //    RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this.getActivity());
+  //      recyclerView.setLayoutManager(mLayoutManager);
         // First param is number of columns and second param is orientation i.e Vertical or Horizontal
         //StaggeredGridLayoutManager gridLayoutManager =
       //          new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
 // Attach the layout manager to the recycler view
        // recyclerView.setLayoutManager(gridLayoutManager);
-        recyclerView.addItemDecoration(new DividerItemDecoration(this.getActivity(), LinearLayoutManager.VERTICAL));
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
-        preparePlacesData();
+  //      recyclerView.addItemDecoration(new DividerItemDecoration(this.getActivity(), LinearLayoutManager.VERTICAL));
+  //      recyclerView.setItemAnimator(new DefaultItemAnimator());
+   //     recyclerView.setAdapter(mAdapter);
+  //      preparePlacesData();
         return v;
     }
-    private void preparePlacesData(){
+  /*  private void preparePlacesData(){
         Places places;
         places=new Places("Taj Mahal");
         placesList.add(places);
@@ -55,5 +48,5 @@ public class ExploreDelhi extends Fragment {
 
         mAdapter.notifyDataSetChanged();
     }
-
+*/
 }
