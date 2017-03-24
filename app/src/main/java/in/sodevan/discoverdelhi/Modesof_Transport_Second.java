@@ -37,9 +37,26 @@ public class Modesof_Transport_Second extends AppCompatActivity {
 
             }
             else if (val.equalsIgnoreCase("Auto Rickshaw")) {
-                textView.setText("Autos are a great way of seeing a city. They are less expensive than taxis and unlike buses, they take you to the doorstep of your destination");
+                textView.setText("Autos are a great way of seeing a city. They are less expensive than taxis and unlike buses," +
+                        " they take you to the doorstep of your destination.");
 
             }
+            else if (val.equalsIgnoreCase("Buses")) {
+                textView.setText("Autos are a great way of seeing a city. They are less expensive than taxis and unlike buses," +
+                        " they take you to the doorstep of your destination.");
+
+            }
+            else if (val.equalsIgnoreCase("Cycle Rickshaw")) {
+                textView.setText("Autos are a great way of seeing a city. They are less expensive than taxis and unlike buses," +
+                        " they take you to the doorstep of your destination.");
+
+            }
+            else if (val.equalsIgnoreCase("Cabs")) {
+                textView.setText("Autos are a great way of seeing a city. They are less expensive than taxis and unlike buses," +
+                        " they take you to the doorstep of your destination.");
+
+            }
+
 
 
         }
