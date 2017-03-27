@@ -9,7 +9,7 @@ while($row =mysqli_fetch_assoc($result))
 {
 	$emparray[] = $row;
 }
-$final=array("places"=>$emparray);
+$final=array("eat"=>$emparray);
 //echo json_encode($final,64);
 echo json_encode($final,JSON_UNESCAPED_SLASHES);
 
